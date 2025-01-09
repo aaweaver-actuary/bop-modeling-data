@@ -12,3 +12,11 @@ dependencies = [
     "polars>=1.19.0",
     "snowflake-snowpark-python>=1.26.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.0",
+    "sqlfluff>=3.3.0",
+    "sqlfmt>=0.0.2",
+]
