@@ -1587,8 +1587,6 @@ dependencies = [
     { name = "pandas" },
     { name = "polars" },
     { name = "snowflake-snowpark-python" },
-    { name = "sqlfluff" },
-    { name = "sqlfmt" },
 ]
 
 [package.dev-dependencies]
@@ -1596,6 +1594,8 @@ dev = [
     { name = "pytest" },
     { name = "ruff" },
     { name = "sqlfluff" },
+    { name = "sqlfmt" },
+    { name = "wheel" },
 ]
 
 [package.metadata]
@@ -1606,8 +1606,6 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "polars", specifier = ">=1.19.0" },
     { name = "snowflake-snowpark-python", specifier = ">=1.26.0" },
-    { name = "sqlfluff", specifier = ">=3.3.0" },
-    { name = "sqlfmt", specifier = ">=0.0.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -1615,6 +1613,8 @@ dev = [
     { name = "pytest", specifier = ">=8.3.4" },
     { name = "ruff", specifier = ">=0.9.0" },
     { name = "sqlfluff", specifier = ">=3.3.0" },
+    { name = "sqlfmt", specifier = ">=0.0.2" },
+    { name = "wheel", specifier = ">=0.45.1" },
 ]
 
 [[package]]
