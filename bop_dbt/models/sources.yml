@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: sf_sb
+    description: Small business schema on the BIDM database.
+    database: SF_BIDM_WORK_PRD
+    schema: SF_SB
+    tables:
+      - name: eclas_ca_exposureview
+        description: Commercial auto analytic image view.
+      - name: eclas_gl_exposureview
+        description: General liability analytic image view.
+      - name: eclas_cf_exposureview
+        description: Commercial property analytic image view.
