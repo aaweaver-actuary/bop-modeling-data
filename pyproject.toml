@@ -30,3 +30,6 @@ build-backend = "hatchling.build"
 
 [tool.uv.workspace]
 members = ["bop_app"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["sf_bop_data"]
