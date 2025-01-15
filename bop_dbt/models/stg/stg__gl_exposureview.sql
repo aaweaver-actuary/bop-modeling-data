@@ -72,9 +72,7 @@ raw AS (
         {
             'type': {
                 'desc': COVERAGETYPEDESCRIPTION,
-                'contents_desc': CONTENTSTYPEDESCRIPTION,
-                'blanket_desc': BLANKETCOVERAGETYPEDESCRIPTION,
-                'eq_sublimit_blanket_desc': EQSUBLIMITBLANKETTYPE
+                
             },
             'risk_type_desc': COVERAGERISKTYPEDESCRIPTION,
             'source_desc': SOURCECOVERAGEDESCRIPTION, 
@@ -87,11 +85,8 @@ raw AS (
         {
             'code': CLASSIFICATIONCODE,
             'desc': CLASSIFICATIONDESCRIPTION,
-            'cincipak': CINCIPAK_CLASS_CODE,
-            'eq_building': {
-                'code': EQBUILDINGCLASSCODE,
-                'desc': EQBUILDINGCLASSDESCRIPTION
-            }
+            'cincipak': CINCIPAK_CLASS_CODE
+            
         } as class,
         {
             'code': {

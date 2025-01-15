@@ -2,12 +2,10 @@ WITH
 
 raw AS (
     SELECT *
-    FROM {{ source('sf_sb', 'eclas_gl_exposureview') }}
+    FROM {{ ref('stg__cf_exposureview') }}
 )
 
-SELECT DISTINCT
-    {
-        'co': companycode,
-        'sym': policysymbol
-    } AS pol
+SELECT 
+    {{ generate_policy_key('policy') }},
+    * 
 FROM raw
