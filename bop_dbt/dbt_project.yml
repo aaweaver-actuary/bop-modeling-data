@@ -13,7 +13,13 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-
 models:
   bop_dbt:
+    +pre-hook: [
+      ''
+    ]
+    stg:
+      eclas_subtables:
+        +node_color: red
+
     

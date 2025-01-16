@@ -70,6 +70,9 @@ raw AS (
             }
         } as insured,
         {
+            'property': HAZARD_GRADE_NUMBER 
+        } as hazard_grade,
+        {
             'type': {
                 'desc': COVERAGETYPEDESCRIPTION,
                 'contents_desc': CONTENTSTYPEDESCRIPTION,

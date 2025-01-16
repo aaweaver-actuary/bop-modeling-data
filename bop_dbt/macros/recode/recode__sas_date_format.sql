@@ -12,4 +12,3 @@
         ) as date
     )
 {% endmacro -%}
-

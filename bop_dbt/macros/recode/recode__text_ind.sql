@@ -2,7 +2,7 @@
     CASE 
         WHEN NOT IS_VARCHAR(TO_VARIANT({{ old_column }}))
             THEN TRY_TO_NUMBER({{ old_column }})
-        ELSE {{ recode__text_ind__dispatch(old_column)}}
+        ELSE {{ recode__text_ind__dispatch(old_column) }}
     END
 {%- endmacro -%}
 
@@ -26,4 +26,3 @@ CASE
     ELSE 0
 END
 {%- endmacro -%}
-

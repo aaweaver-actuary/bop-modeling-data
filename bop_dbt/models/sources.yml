@@ -12,3 +12,21 @@ sources:
         description: General liability analytic image view.
       - name: eclas_cf_exposureview
         description: Commercial property analytic image view.
+
+  - name: sf_yaildb_eclas
+    database: SF_YAILDB_PRD
+    schema: SF_ECLAS
+    tables:
+      - name: "EClas_CFXML"
+      - name: "EClas_CoveredItem"
+        description: eClas Covered Item table
+      - name: "EClas_EventData"
+        description: eClas Event Data table
+      - name: "EClas_FormDetailSC"
+        description: eClas Form Detail-Structural Component Table
+      - name: "EClas_InfoSC"
+        description: eClas Info-Structural Component Table
+      - name: "EClas_InsurAgr"
+        description: eClas Insurance Agreement Table
+      - name: "EClas_InsurAgr_Coverage"
+        description: eClas Covered Item table
